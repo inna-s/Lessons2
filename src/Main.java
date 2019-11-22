@@ -12,7 +12,7 @@ public class Main {
         int number;
         number = numbers[i];
         boolean unsorting = false;
-        for (i = 0; i < numbers.length - 1; i++) {
+        for (i = 0; i < numbers.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (numbers[i] > numbers[i + 1]) {
                     do {
