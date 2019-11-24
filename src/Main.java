@@ -1,38 +1,30 @@
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args ) {
+        int[] numbers = {5, 21, 19, 55, 94, 73, 69, 100};
+        for (int num : numbers) {
+            System.out.print(num + ",");
+            int repeat = 0;
+            int j = 0;
 
-        int[] numbers;
-        numbers = new int[4];
-        numbers[0] = 5;
-        numbers[1] = 3;
-        numbers[2] = 2;
-        numbers[3] = 7;
-        int i = 0;
-        int number;
-        number = numbers[i];
-        boolean unsorting = false;
-        for (i = 0; i < numbers.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (numbers[i] > numbers[i + 1]) {
-                    do {
+            do {
+                for (int i = 0; i < numbers.length-1; i++) {
+                    if (numbers[i] > numbers[i + 1]) {
                         j = numbers[i];
                         numbers[i] = numbers[i + 1];
                         numbers[i + 1] = j;
-                    }
-                    while (false);
-                    {
-                        boolean sorting = true;
-                        {  if (numbers[i] < numbers[i + 1]) ;
-                        while (numbers[i]<numbers.length)
-                            System.out.println(numbers[i++]);
-                            }
-
-
-                        }
+                        repeat++;
                     }
                 }
             }
+            while (repeat > 0);
+            System.out.println();
+        }
+            for (int num: numbers) {
+                System.out.print(num + ",");
+
+
+            }
+
         }
     }
-
