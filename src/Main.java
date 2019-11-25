@@ -33,4 +33,4 @@ public class Main {
                 return middle;
             }
 
-        }
+        } return -1
