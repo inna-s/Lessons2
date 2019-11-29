@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-       int[] numbers;
+        int[] numbers;
         numbers = sorting(new int[]{5, 21, 19, 55, 94, 73, 69, 100,});
 
-        int[] num = binarySearch(new int[] {5, 19, 21, 55, 69, 73, 94, 100,},key);
-
+        System.out.println(binarySearch(55, new int[]{5, 19, 21, 55, 69, 73, 94, 100,}));
 
     }
 
@@ -26,18 +25,21 @@ public class Main {
     }
 
     public static int binarySearch(int key, int[] num) {
+
         int low = 0;
         int high = num.length - 1;
-        while (low<=high) {
-            int middle = low + (high-low)/2;
-            if(key< num[middle]) {
-                high = middle-1;
+        while (low <= high) {
+            int middle = low + (high - low) / 2;
+            if (key < num[middle]) {
+                high = middle - 1;
             } else if (key > num[middle]) {
-                low = middle+1;
-            }else {
+                low = middle + 1;
+            } else {
                 return middle;
             }
 
         }
-        System.out.println(key);
-     return -1;}}
+
+        return -1;
+    }
+}
