@@ -3,7 +3,7 @@ public class Main {
         int[] numbers;
         numbers = sorting(new int[]{5, 21, 19, 55, 94, 73, 69, 100,});
 
-        System.out.println(binarySearch(55, new int[]{5, 19, 21, 55, 69, 73, 94, 100,}));
+        System.out.println(binarySearch(73, new int[]{5, 19, 21, 55, 69, 73, 94, 100,}));
 
     }
 
@@ -18,7 +18,7 @@ public class Main {
                     numbers[i + 1] = j;
                 }
             }
-            System.out.print(num + ",");
+            System.out.println(num + ",");
         }
         return (numbers);
 
