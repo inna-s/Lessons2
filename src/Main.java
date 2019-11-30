@@ -8,17 +8,16 @@ public class Main {
 
     }
 
-    public static long[] sorting(long [] numbers) {
+    public static long[] sorting(long[] numbers) {
         int[] intNumbers = new int[numbers.length];
         for (long num : numbers) {
             long j = 0;
             for (int i = 0; i < numbers.length - 1; i++) {
-                intNumbers [i] = (int) numbers[i];
+                intNumbers[i] = (int) numbers[i];
                 if (numbers[i] > numbers[i + 1]) {
                     j = numbers[i];
                     numbers[i] = numbers[i + 1];
                     numbers[i + 1] = j;
-
 
 
                 }
