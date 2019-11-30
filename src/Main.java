@@ -1,21 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        int[] numbers;
-        numbers = sorting(new int[]{5, 21, 19, 55, 94, 73, 69, 100,});
+        long[] numbers;
+        numbers = sorting(new long[]{5, 21, 19, 55, 94, 73, 69, 100,});
+
 
         System.out.println(binarySearch(73, new int[]{5, 19, 21, 55, 69, 73, 94, 100,}));
 
     }
 
-    public static int[] sorting(int[] numbers) {
-
-        for (int num : numbers) {
-            int j = 0;
+    public static long[] sorting(long [] numbers) {
+        int[] intNumbers = new int[numbers.length];
+        for (long num : numbers) {
+            long j = 0;
             for (int i = 0; i < numbers.length - 1; i++) {
+                intNumbers [i] = (int) numbers[i];
                 if (numbers[i] > numbers[i + 1]) {
                     j = numbers[i];
                     numbers[i] = numbers[i + 1];
                     numbers[i + 1] = j;
+
+
+
                 }
             }
             System.out.println(num + ",");
